@@ -1,0 +1,389 @@
+$headerColor: #1B1D20;
+$menuLinkColor: white;
+$menuLinkColorHover:#49433D;
+$footerColor: #1B1D1F;
+$pricesColor: white;
+$pricesTitle: black;
+$pricesTextTime: #0A0A0A;
+$pricesTextPrice: #0A0A0A;
+$gamesColor: #1B1D1F;
+$subtitleBlue: #2CCCBC;
+$blueButton : #1576D9;
+$blueButtonHover : #148AFF;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+// Header Styles
+.header{
+    background-color:$headerColor;
+    height: 9vh;
+    &__icon{
+        
+        display: none;
+        
+    }
+    &__link{
+        color: $menuLinkColor;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 20px;
+        font-weight: bold;
+        margin-right: 3%;
+        margin-left: 2%;
+        &:hover{
+            color: $menuLinkColorHover;
+            text-decoration: none;
+
+        }
+        &:focus{
+            color:white;
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        background-color:$headerColor;
+        height: 60px;
+        &__icon{
+            display: block;
+            float: right;
+            height: 9vh;
+            padding: 10px;
+            color: white;
+            font-size: 38px;
+            cursor: pointer;
+        }
+       
+        
+        &__link{
+            display: block;
+            width: 100%;
+            margin-top: 0px;
+            padding: 5px;
+            display: none;
+            &:hover{
+                color: $menuLinkColorHover;
+                text-decoration: none;
+            }
+            &:focus{
+                color:white;
+                text-decoration: none;
+            }
+        }
+    }
+  }
+
+
+
+// Footer Styles
+.footer{
+    background-color: $footerColor;
+    color:white;
+    padding: 2%;
+    &__link{
+        color: $menuLinkColor;
+        display: block;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        margin-right: 3%;
+        margin-left: 2%;
+        &:hover{
+            color: $menuLinkColorHover;
+            text-decoration: none;
+
+        }
+        &:focus{
+            color:white;
+            text-decoration: none;
+        }
+    }
+    &__socialNetworks{
+        margin-right: 20px;
+        font-size: 35px;
+        color: white;
+    }
+}
+
+// Home Styles
+.homeSlider{
+    &__image{
+        
+        object-fit: cover;
+        width: 100%;
+
+    }
+}
+
+.homeGame{
+    position: relative;
+    &__image{
+        height: 91vh;
+        object-fit: cover;
+        width: 100%;
+    }
+    &__title{
+        text-align: center;
+        margin: 50px;
+    }
+    &__button{
+        padding: 10px;
+        position: absolute;
+        left: 35%;
+        bottom:15%;
+        color:white;
+        font-size: 40px;
+        background-color: $blueButtonHover;
+        text-decoration: none;
+        transition: all 1s;
+        &:hover{
+            text-decoration: none;
+            background-color: #1B1D1F;
+            color:white;
+        }
+    }
+    
+}
+.homeInformation{
+    margin-top: 1.3%;
+    &__image{
+        width:100%;
+        height: 100%;
+        
+    }
+    &__title{
+        text-align: center;
+    }
+    &__subtitle{
+        text-align: center;
+        font-size: 15px;
+    }
+    &__paragraph{
+        text-align: center;
+        margin: 5px;
+        font-size: 18px;
+    }
+}
+
+// About Styles
+.about{
+    margin:5%;
+    color: #49433D;
+    &__carousel{
+       
+    }
+    &__title{
+        text-align: center;
+    }
+    &__paragraph{
+        text-align: center;
+        font-size: 18px;
+        padding: 4%;
+    }
+}
+
+// Games Styles
+.games{
+   background-color: $gamesColor;
+    color: white;
+    &__title{
+        margin-left: 3%;
+        margin-top: 0;
+        margin-bottom: 2%;
+    }
+    &__list{
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 3%;
+    }
+    &__listBox{
+        background-color: black;
+        
+    }
+    &__image{
+        width: 100%;
+        height: 170px;
+    }
+    &__name{
+        margin-bottom: 10%;
+    }
+    &__link{
+        color:white;
+        &:hover{
+            color: $menuLinkColorHover;
+        }
+    }
+
+}
+
+// GamesIndividual Styles
+
+.gamesIndividual{
+    background-color:black;
+    
+    &__box {
+        color:white;
+    }
+    &__video{
+        width:70%;
+        height: 70vh;
+        object-fit: cover;
+    }
+    &__paragraph{
+        padding: 1%;
+        font-size: 15px;
+    }
+}
+
+// Prices Styles
+.prices{
+    background-color: $pricesColor;
+    &__title{
+        text-align: center;
+    }
+    &__paragraph{
+        text-align: center;
+        font-size: 18px;
+        padding: 4%;
+    }
+    &__box{
+        position: relative;
+    }
+    
+    &__image{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+
+    &__button{
+        padding: 10px;
+        position: absolute;
+        text-align: center;
+        left: 31%;
+        bottom:15%;
+        width: 40%;
+        color:white;
+        font-size: 25px;
+        padding: 10px;
+        background-color: #2CCCBC;
+        text-decoration: none;
+        transition: all 1s;
+        border-radius: 7px;
+        &-b{
+            background-color: #0095FD;
+        }
+        &-c{
+            background-color:#F6416B;
+        }
+        &-d{
+            background-color: #AB3BC5;
+        }
+        &:hover{
+            text-decoration: none;
+            background-color: #1B1D1F;
+            color:white;
+            transform: scale(1.1)
+        }
+    }
+    &__textTermns{
+        margin: 25px;
+        margin-top: 30px;
+    }
+
+}
+
+
+
+// Booking Styles 
+.booking{
+    margin:5%;
+    &__subtitle{
+        color: $subtitleBlue;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    &__inputBox{
+        background-color:#222C3C;
+        border-radius: 10px;
+        padding: 10px;
+        width:300px;
+        margin:10px;
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+    &__payButton{
+        background-color: $blueButton;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+        border:none;
+        transition: all 1s;
+        margin: 20px;
+        &:hover{
+            background-color: $blueButtonHover;
+        }
+        
+    }
+    &__termns{
+        margin: 10px;
+        margin-top: 3%;
+    }
+}
+
+// Discounts Styles
+
+.discounts{
+    margin:5%;
+    color: #49433D;
+    &__title{
+        text-align: center;
+        margin-bottom:3%;
+    }
+    &__paragraph{
+        text-align: center;
+        font-size: 18px;
+        padding: 4%;
+    }
+    &__image{
+        width: 100%;
+        
+        object-fit: cover;
+    }
+}
+
+
+// Contact Styles
+
+.contact{
+    margin-bottom: 50px;
+    &__title{
+        text-align: center;
+        margin: 30px;
+    }
+    &__icons{
+        font-size:80px;
+        margin: 10px;
+        &-instagram{
+            color: rgb(204, 0, 136);
+        }
+        &-whatsapp{
+            color: rgb(31, 160, 14);
+        }
+        &-youtube{
+            color: rgb(255, 1, 1);
+        }
+    }
+}
