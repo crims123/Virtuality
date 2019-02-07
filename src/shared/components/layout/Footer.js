@@ -6,8 +6,8 @@ import {Link} from "react-router-dom";
             <div className="container-fluid">
                 <div className="row footer">
                 <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <p>Carrera 54 56, Bucaramanga-Colombia<br></br>
-                    647-946-4331<br></br>
+                <p>Bucaramanga-Colombia<br></br>
+                    3193659436<br></br>
                     soporte@virtuality.com.co
                     <br></br><br></br>
                     &copy; Virtuality {(new Date()).getFullYear()}<br></br>

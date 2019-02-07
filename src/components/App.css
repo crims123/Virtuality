@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
 * {
   margin: 0;
   padding: 0; }
+
+h1, h2 {
+  font-family: 'Anton', sans-serif; }
 
 .header {
   background-color: #1B1D20;
@@ -25,21 +29,22 @@
 @media only screen and (max-width: 600px) {
   .header {
     background-color: #1B1D20;
-    height: 60px; }
+    height: 100%; }
     .header__icon {
       display: block;
-      float: right;
       height: 9vh;
       padding: 10px;
       color: white;
       font-size: 38px;
       cursor: pointer; }
     .header__link {
-      display: block;
+      display: none;
       width: 100%;
       margin-top: 0px;
       padding: 5px;
-      display: none; }
+      z-index: 100; }
+      .header__link-b {
+        display: block; }
       .header__link:hover {
         color: #49433D;
         text-decoration: none; }
@@ -84,12 +89,14 @@
     text-align: center;
     margin: 50px; }
   .homeGame__button {
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
     padding: 10px;
     position: absolute;
-    left: 35%;
+    left: 38%;
     bottom: 15%;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     background-color: #148AFF;
     text-decoration: none;
     transition: all 1s; }

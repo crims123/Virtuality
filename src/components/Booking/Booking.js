@@ -117,9 +117,9 @@ class Booking extends React.Component {
               </select>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <h3 className="booking__subtitle">Tiempo de cada Jugador:</h3>
+              <h3 className="booking__subtitle">Tiempo para cada Jugador:</h3>
               <select className="booking__inputBox"   id="minutes" name="minutes">
-                <option value="">Tiempo por cada Jugador</option>
+                <option value="">Tiempo para cada Jugador</option>
                 <option  value="10000">15 Minutos</option>
                 <option  value="18000">30 Minutos</option>
                 <option  value="36000">60 Minutos</option>
