@@ -1,6 +1,9 @@
 import React, {Component,Fragment} from "react";
 import {Carousel} from "react-bootstrap";
 import aboutOclus from "../../shared/images/aboutOclus.jpeg";
+import aboutSlider1 from "../../shared/images/about1.jpg";
+import aboutSlider2 from "../../shared/images/about2.jpg";
+import aboutSlider3 from "../../shared/images/about3.jpg";
 class About extends Component{
     render(){
         return(
@@ -15,14 +18,14 @@ class About extends Component{
                         <div className="about__carousel">
                             <Carousel >
                                 <Carousel.Item>
-                                    <img  alt="900x500" src="https://vrplayin.ca/img/frontend/about/vrplayin-play-racing.jpg" />
+                                    <img  alt="900x500" src={aboutSlider1} />
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                    <img alt="900x500" src="https://vrplayin.ca/img/frontend/about/vrplayin-play-3.jpg" />
+                                    <img alt="900x500" src={aboutSlider2} />
                                 
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                    <img alt="900x500" src="https://vrplayin.ca/img/frontend/about/vrplayin-play-4.jpg" />
+                                    <img alt="900x500" src={aboutSlider3} />
                 
                                 </Carousel.Item>
                             </Carousel>;

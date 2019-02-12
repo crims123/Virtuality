@@ -42,7 +42,7 @@ import {Link} from "react-router-dom";
          return(
              <div className="header">
              <center>
-             <i onClick={this.changeMenu}   class="fas fa-bars header__icon"></i>
+             <i onClick={this.changeMenu}   className="fas fa-bars header__icon"></i>
              <Link onClick={this.hiddenMenu} className={`${menuClick ? 'header__link header__link-b' : 'header__link'}`}  to="/">Inicio</Link>
                <Link onClick={this.hiddenMenu} className={`${menuClick ? 'header__link header__link-b' : 'header__link'}`} to="/nosotros">Nosotros</Link>
                <Link onClick={this.hiddenMenu} className={`${menuClick ? 'header__link header__link-b' : 'header__link'}`} to="/catalogo">Catalogo de Juegos</Link>

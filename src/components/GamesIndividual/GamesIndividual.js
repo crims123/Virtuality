@@ -7,8 +7,8 @@ class GamesIndividual extends Component{
             <div className="gamesIndividual">
                 <center>
                     <iframe className="gamesIndividual__video" src={`https://www.youtube.com/embed/${gamesSelected.video}`}
-                    frameborder="0" allow="accelerometer; autoplay=1;
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    frameBorder="0" allow="accelerometer; autoplay=1;
+                    encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     </iframe>
                 </center> 
 

@@ -1,7 +1,5 @@
-// Import FirebaseAuth and firebase.
-import React,{Fragment}  from 'react';
-import TimePicker from 'react-bootstrap-time-picker';
 
+import React,{Fragment}  from 'react';
 
 class Booking extends React.Component {
   state = {
@@ -130,22 +128,22 @@ class Booking extends React.Component {
             </div>
         </form>
 
-      <center>
-        {date !=="" && hour!=="" && minutes !=="" && players !=="" && price !==""  & time !=="" ? 
-        <form method="post" action="https://checkout.payulatam.com/ppp-web-gateway-payu/">
-            <input name="merchantId"    type="hidden"  value="545714"   />
-            <input name="accountId"     type="hidden"  value="547913" />
-            <input name="description"   type="hidden"  value={`Reserva el dia ${date} a las ${hour} para ${players} jugadores, tiempo ${time} minutos cada uno.`}   />
-            <input name="referenceCode" type="hidden"  value="PagoReserva" />
-            <input name="amount"        type="hidden"  value={`${price}`}   />
-            <input name="tax"           type="hidden"  value="0"  />
-            <input name="taxReturnBase" type="hidden"  value="0" />
-            <input name="currency"      type="hidden"  value="COP" />
-            <input name="signature"     type="hidden"  value={`${signature}`}  />
-            <input name="Submit" className="booking__payButton" type="submit"  value="Pagar Reserva"/>
-        </form>:""}
-      </center>
-      <p className="booking__termns">
+        <center>
+            {date !=="" && hour!=="" && minutes !=="" && players !=="" && price !==""  & time !=="" ? 
+            <form method="post" action="https://checkout.payulatam.com/ppp-web-gateway-payu/">
+                <input name="merchantId"    type="hidden"  value="545714"   />
+                <input name="accountId"     type="hidden"  value="547913" />
+                <input name="description"   type="hidden"  value={`Reserva el dia ${date} a las ${hour} para ${players} jugadores, tiempo ${time} minutos cada uno.`}   />
+                <input name="referenceCode" type="hidden"  value="PagoReserva" />
+                <input name="amount"        type="hidden"  value={`${price}`}   />
+                <input name="tax"           type="hidden"  value="0"  />
+                <input name="taxReturnBase" type="hidden"  value="0" />
+                <input name="currency"      type="hidden"  value="COP" />
+                <input name="signature"     type="hidden"  value={`${signature}`}  />
+                <input name="Submit" className="booking__payButton" type="submit"  value="Pagar Reserva"/>
+            </form>:""}
+        </center>
+        <p className="booking__termns">
                 <b>Terminos y condiciònes al realizar una reserva:</b><br></br>
                 Solo se realzara la reserva una vez completado el pago por la plataforma.<br></br> 
                 Para pagos por efecty o baloto solo se realizara la reserva una vez se procese el pago en las ventanillas (sin costo adicional).<br></br>
@@ -153,10 +151,8 @@ class Booking extends React.Component {
                 En caso se no asistir o llegar tarde(10 minutos despues de la hora de la reserva) se cobara una multa del 10% sobre el monto 
                 total de la reserva y se reajustara el dìa y la hora de la reserva con la administraciòn.<br></br>
                 No se realizan reemsolsos de dinero los reembolsos se remiden por tiempo de juego.<br></br>
-                
-                </p>
-      
-        </div>
+        </p>
+      </div>
     );
   }
 }

@@ -1,7 +1,9 @@
 import React , {Component,Fragment} from "react";
 import {Carousel} from "react-bootstrap";
 import {Link} from "react-router-dom";
-
+import gamesSlider1 from "../../shared/images/gamesSlider1.jpg";
+import gamesSlider2 from "../../shared/images/gamesSlider2.jpg";
+import gamesSlider3 from "../../shared/images/gamesSlider3.jpg";
 
 class Games extends Component{
     componentDidMount(){
@@ -55,12 +57,8 @@ class Games extends Component{
             {id:9 ,name:"Gray", image:"https://i.ytimg.com/vi/_lupCNQWzM8/maxresdefault.jpg",
             description:"¿Puedes escapar de este miedo? En este juego se prueba tu valentía. ¡Enfrentemos el miedo ahora!",
             video:"UC8KnrpEG0c"
-            },
-            
-           
-           
+            },   
         ]
-        
         this.props.loadGames(games);
     }
     render(){
@@ -73,15 +71,15 @@ class Games extends Component{
                <center>
                     <Carousel >
                         <Carousel.Item>
-                            <img width={1189} height={452}  alt="1189x452" src="https://scontent.oculuscdn.com/v/t64.5771-25/q92/s2048x2048/11162690_1597657833600851_7686325918767251456_n.jpg?_nc_cat=102&_nc_ht=scontent.oculuscdn.com&oh=da05a14b33e3cf209eeda20fa01d3fd7&oe=5C74418A" />
+                            <img width={1189} height={452}  alt="1189x452" src={gamesSlider1} />
                         </Carousel.Item>
 
                         <Carousel.Item>
-                            <img width={1189} height={452}  alt="900x500" src="https://scontent.oculuscdn.com/v/t64.5771-25/q92/s2048x2048/12410459_1367847169915669_8090052140216614912_n.jpg?_nc_cat=105&_nc_ht=scontent.oculuscdn.com&oh=34c5dd629e29172713aa23db4dab6c7c&oe=5C755DA5" />              
+                            <img width={1189} height={452}  alt="900x500" src={gamesSlider2} />              
                         </Carousel.Item>
 
                         <Carousel.Item>
-                            <img  width={1189} height={452} alt="900x500" src="https://scontent.oculuscdn.com/v/t64.5771-25/q92/s2048x2048/12139051_755462674604790_4774738490405421056_n.jpg?_nc_cat=105&_nc_ht=scontent.oculuscdn.com&oh=cce752d418de82339d0e9644b52744fe&oe=5C79F13C" />
+                            <img  width={1189} height={452} alt="900x500" src={gamesSlider3} />
                         </Carousel.Item>
                     </Carousel>
                </center>

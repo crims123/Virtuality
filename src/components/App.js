@@ -6,7 +6,7 @@ import React from 'react';
  import './App.css';
  const App = props => (
   <div>
-    <Header />
+    <Header title ="Virtuality" />
     <Content>
       {props.children}
     </Content>
